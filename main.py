@@ -1,21 +1,14 @@
-#rock papper scissors
-import random
+# function which return reverse of a string
 
-choices = ["rock", "paper", "scissors"]
+def isPalindrome(s):
+	return s == s[::-1]
 
-player_choice = input("Choose rock, paper, or scissors: ").lower()
-computer_choice = random.choice(choices)
 
-print(f"Player chose {player_choice}.")
-print(f"Computer chose {computer_choice}.")
+# Driver code
+s = "malayalam"
+ans = isPalindrome(s)
 
-if player_choice == computer_choice:
-    print("It's a tie!")
-elif player_choice == "rock" and computer_choice == "scissors":
-    print("Player wins!")
-elif player_choice == "paper" and computer_choice == "rock":
-    print("Player wins!")
-elif player_choice == "scissors" and computer_choice == "paper":
-    print("Player wins!")
+if ans:
+	print("Yes")
 else:
-    print("Computer wins!")
+	print("No")
