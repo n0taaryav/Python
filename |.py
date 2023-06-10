@@ -1,14 +1,9 @@
-# function which return reverse of a string
+from time import sleep
 
-def isPalindrome(s):
-	return s == s[::-1]
+time = input("Enter Time: ")
+type = type(time)
 
-
-# Driver code
-s = "malayalam"
-ans = isPalindrome(s)
-
-if ans:
-	print("Yes")
-else:
-	print("No")
+while time > 0:
+  print(time)
+  time -= 1
+  sleep(1)
